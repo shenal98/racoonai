@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Raccoon AI - Home</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Bootstrap 4 Template For Software Startups">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+	
+
+</head> 
+
+<script>
+
+	//Tools to analyze data
+
+	//analyze my data
+	function Button01Submit () {
+		var iframe = $("#button_01");
+		iframe.attr("src", iframe.data("src")); 
+
+		$(document).ready(function(){
+			var url = "https://raccoon-ai.df.r.appspot.com/analyze";
+			$('#button_01').attr("src", url);
+		})
+	}
+
+	//PCA
+	function Button02Submit () {
+
+		var iframe = $("#button_01");
+		iframe.attr("src", iframe.data("src") , iframe.data("data-src")); 
+
+		$(document).ready(function(){
+			var url = "https://racoon-ai.df.r.appspot.com/about";
+			$('#button_01').attr("src", url);
+		})
+	}
+
+	//Preprocess data
+	function Button03Submit () {
+		var iframe = $("#button_01");
+		iframe.attr("src", iframe.data("src") , iframe.data("data-src"));
+		
+		$(document).ready(function(){
+			var url = "https://raccoon-ai.df.r.appspot.com/preprocess";
+			$('#button_01').attr("src", url);
+		})	
+	}
+
+    //ML Models
+
+	//Linear Regression
+	function Button04Submit () {
+		var iframe = $("#button_01");
+		iframe.attr("src", iframe.data("src")); 
+
+		$(document).ready(function(){
+			var url = "https://raccoon-ai.df.r.appspot.com/linreg";
+			$('#button_01').attr("src", url);
+		})
+	}
+
+	//Multiple regression
+	function Button05Submit () {
+
+		var iframe = $("#button_01");
+		iframe.attr("src", iframe.data("src") , iframe.data("data-src")); 
+
+		$(document).ready(function(){
+			var url = "https://raccoon-ai.df.r.appspot.com/mulreg";
+			$('#button_01').attr("src", url);
+		})
+	}
+
+	//Decision tree
+	function Button06Submit () {
+		var iframe = $("#button_01");
+		iframe.attr("src", iframe.data("src") , iframe.data("data-src"));
+		
+		$(document).ready(function(){
+			var url = "https://raccoon-ai.df.r.appspot.com/destree";
+			$('#button_01').attr("src", url);
+		})	
+	}
+
+	//ANN
+	function Button07Submit () {
+		var iframe = $("#button_01");
+		iframe.attr("src", iframe.data("src") , iframe.data("data-src"));
+		
+		$(document).ready(function(){
+			var url = "https://raccoon-ai.df.r.appspot.com/ann";
+			$('#button_01').attr("src", url);
+		})	
+	}
+
+
+
+	//Case Study
+	function Button08Submit () {
+	var iframe = $("#button_01");
+	iframe.attr("src", iframe.data("src") , iframe.data("data-src"));
+	
+	$(document).ready(function(){
+		var url = "https://raccoon-ai.df.r.appspot.com/upload";
+		$('#button_01').attr("src", url);
+	})	
+	}
+
+	//Datasets
+
+	//DS01
+	function Button09Submit () {
+	var iframe = $("#button_01");
+	iframe.attr("src", iframe.data("src") , iframe.data("data-src"));
+	
+	$(document).ready(function(){
+		var url = "https://raccoon-ai.df.r.appspot.com/datastore/d1";
+		$('#button_01').attr("src", url);
+	})
+}	
+
+	//DS02
+	function Button10Submit () {
+	var iframe = $("#button_01");
+	iframe.attr("src", iframe.data("src") , iframe.data("data-src"));
+	
+	$(document).ready(function(){
+		var url = "https://raccoon-ai.df.r.appspot.com/datastore/d2";
+		$('#button_01').attr("src", url);
+	})	
+	}
+
+	//DS03
+	function Button11Submit () {
+	var iframe = $("#button_01");
+	iframe.attr("src", iframe.data("src") , iframe.data("data-src"));
+	
+	$(document).ready(function(){
+		var url = "https://raccoon-ai.df.r.appspot.com/datastore/d3";
+		$('#button_01').attr("src", url);
+	})	
+
+	}
+	
+
+
+</script>
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.php"><img class="logo-icon me-2" src="assets/images/new_logo/favicon.ico" alt="logo"><span class="logo-text">Raccoon<span class="text-alt"> AI</span></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+					
+					<a href="selectplan.php" style="width: 150px; text-align: center;" class="btn btn-primary">Select Plan</a>&nbsp&nbsp
+					<a href="logout.php" style="width: 150px; text-align: center;" class="btn btn-primary">Log Out</a>
+						
+
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<!-- <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li> -->
+		            </ul><!--//social-list-->
+		            <!-- <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-5-documentation-template-for-software-projects/" class="btn btn-primary d-none d-lg-flex">Download</a> -->
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+	
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Datasets</a></li>
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Implement Your Workflows in Python</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Section Item 1.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Section Item 1.3</a></li> -->
+
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Model and Tool Gallery</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Raccoon AI Workbench</a></li>
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Section Item 2.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Section Item 2.3</a></li> -->
+
+					
+
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Case Study</a></li>
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Section Item 5.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Section Item 5.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Section Item 5.3</a></li> -->
+
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-box fa-fw"></i></span>User Guide</a></li>
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Section Item 3.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Section Item 3.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Section Item 3.3</a></li> -->
+
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-cogs fa-fw"></i></span>API Ref</a></li>
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Section Item 4.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Section Item 4.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Section Item 4.3</a></li> -->
+
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Contact Us</a></li>
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Section Item 6.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Section Item 6.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Section Item 6.3</a></li> -->
+
+				    
+
+				    <!-- <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span class="theme-icon-holder me-2"><i class="fas fa-book-reader"></i></span>Resources</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">Section Item 8.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">Section Item 8.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-3">Section Item 8.3</a></li>
+
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Section Item 9.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Section Item 9.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">Section Item 9.3</a></li> -->
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+
+
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Datasets <span class="docs-time"></span></h1>
+					    <section class="docs-intro">
+						    <p>A step-by-step guide to building, deploying, and iterating on platform tasks and workflows on provided datasets with high accuracy</p>
+						</section><!--//docs-intro-->
+
+						<div class="page-content">
+							<div class="container">
+								<div class="docs-overview py-5">
+									<div class="row justify-content-center">
+					
+										<div class="col-12 col-lg-4 py-3">
+											<div class="card shadow-sm">
+												<div class="card-body">
+													<h5 class="card-title mb-3">
+														<span class="theme-icon-holder card-icon-holder me-2">
+															<i class="fas fa-box fa-fw"></i>
+														</span><!--//card-icon-holder-->
+														<span class="card-title-text">Dataset 01 - Rice Production</span>
+													</h5>
+													<img src="assets/images/img/Rice-Paddy-Production.jpg" width="300" height="175" alt="logo">
+													<div class="card-text">
+														<br>
+														Rice production  is one of the main productions and staple foods in Sri Lanka.
+														This dataset comprised with production of rice in both Yala and Maha seasons from 1952 to 2010. 							    
+													</div>
+													
+													<a class="card-link-mask" href="#item-2-1" class="btn btn-primary" id="Button09Submit" onclick="Button09Submit()"></a>
+												</div><!--//card-body-->
+											</div><!--//card-->
+										</div><!--//col-->
+					
+										<div class="col-12 col-lg-4 py-3">
+											<div class="card shadow-sm">
+												<div class="card-body">
+													<h5 class="card-title mb-3">
+														<span class="theme-icon-holder card-icon-holder me-2">
+															<i class="fas fa-box fa-fw"></i>
+														</span><!--//card-icon-holder-->
+														<span class="card-title-text">Dataset 02 - ICT Industry</span>
+													</h5>
+													<img src="assets/images/img/ict.jpg" width="300" height="175" alt="logo">
+													<div class="card-text">
+														<br>
+														This dataset has initiated by Information and Communication technology Agency of Sri Lanka
+														based on a survery  in 2017 forcusing computer literacy and equipment avialability accross
+														the country.							    
+													</div>
+													<a class="card-link-mask" href="#item-2-1" class="btn btn-primary" id="Button10Submit" onclick="Button10Submit()"></a>												</div><!--//card-body-->
+											</div><!--//card-->
+										</div><!--//col-->
+					
+					
+										<div class="col-12 col-lg-4 py-3">
+											<div class="card shadow-sm">
+												<div class="card-body">
+													<h5 class="card-title mb-3">
+														<span class="theme-icon-holder card-icon-holder me-2">
+															<i class="fas fa-box fa-fw"></i>
+														</span><!--//card-icon-holder-->
+														<span class="card-title-text">Dataset 03 - Economical Data</span>
+													</h5>
+													<img src="assets/images/img/econ.jpg" width="300" height="175" alt="logo">
+													<div class="card-text">
+														<br>
+														This dataset has economical data of Sri lanka mostly forcus on gross domestic and industrial 
+														production.  							    
+													</div>
+													<a class="card-link-mask" href="#item-2-1" class="btn btn-primary" id="Button11Submit" onclick="Button11Submit()"></a>												</div><!--//card-body-->
+											</div><!--//card-->
+										</div><!--//col-->								
+									</div><!--//row-->
+								</div><!--//container-->
+							</div><!--//container-->
+					   </div><!--//page-content-
+						
+
+
+
+						<h5>Github Code Example:</h5> -->
+
+						<!-- <p>You can <a id="LinkSubmit" onclick="LinkSubmit()" class="theme-link"  >Submit</a></p>
+
+						<script>
+							function LinkSubmit () {
+								var iframe = $("#submitFrame");
+								iframe.attr("src", iframe.data("src")); 
+							}
+						</script> -->
+
+						<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+						<!-- <button id="LinkSubmit" onclick="LinkSubmit()">OPEN</button> -->
+						<!-- <iframe id="submitFrame" data-src="https://slt-business-intelligence.el.r.appspot.com/about" src="about:blank" width="500" height="200" style="background:#a5cfbe"></iframe> -->
+
+
+						
+					     <!-- <h5>Highlight.js Example:</h5>
+						<p>You can <a class="theme-link" href="https://github.com/highlightjs/highlight.js" target="_blank">embed your code snippets using highlight.js</a> It supports <a class="theme-link" href="https://highlightjs.org/static/demo/" target="_blank">185 languages and 89 styles</a>.</p>
+						<p>This template uses <a class="theme-link" href="https://highlightjs.org/static/demo/" target="_blank">Atom One Dark</a> style for the code blocks: <br><code>&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css&#x22;&#x3E;</code></p> -->
+						<!-- <div class="docs-code-block">
+							<pre class="shadow-lg rounded"><code class="json hljs">[
+														{
+															<span class="hljs-attr">"title"</span>: <span class="hljs-string">"apples"</span>,
+															<span class="hljs-attr">"count"</span>: [<span class="hljs-number">12000</span>, <span class="hljs-number">20000</span>],
+															<span class="hljs-attr">"description"</span>: {<span class="hljs-attr">"text"</span>: <span class="hljs-string">"..."</span>, <span class="hljs-attr">"sensitive"</span>: <span class="hljs-literal">false</span>}
+														},
+														{
+															<span class="hljs-attr">"title"</span>: <span class="hljs-string">"oranges"</span>,
+															<span class="hljs-attr">"count"</span>: [<span class="hljs-number">17500</span>, <span class="hljs-literal">null</span>],
+															<span class="hljs-attr">"description"</span>: {<span class="hljs-attr">"text"</span>: <span class="hljs-string">"..."</span>, <span class="hljs-attr">"sensitive"</span>: <span class="hljs-literal">false</span>}
+														}
+														]
+
+
+						</code>
+							</pre>
+						</div> -->
+						
+						
+				    </header>
+				    <!-- <section class="docs-section" id="item-1-1">
+						<h2 class="section-heading">Implement Your Workflows in Python</h2>
+						<br>
+						<h4>Prerequisites:</h4>
+						<p>Make sure you have <a class="theme-link" href="https://git-scm.com/downloads" target="_blank">Git</a> , and <a class="theme-link" href="https://www.python.org/downloads/" target="_blank">Python</a> >= 3.7 installed.</p>
+						
+						<br>
+						<h4>Start a new project / repository</h4>
+						<p>Use following commands to construct your repository</p>
+
+						<ul>
+						    <li><strong class="me-1">(venv)$</strong> <code>git clone</code></li>
+							<li><strong class="me-1">(venv)$</strong> <code>To be added</code></li>
+							<li><strong class="me-1">(venv)$</strong> <code>To be added</code></li>
+
+						</ul> -->
+						
+
+					
+			    </article>
+			    
+
+
+
+
+
+
+
+
+
+
+			    <article class="docs-article" id="section-2">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Model and Tool Gallery</h1>
+					    <section class="docs-intro">
+
+							<br>
+							<h5>Tools to analyze data:</h5>
+
+						
+							<div class="row my-3">
+								<div class="col-md-12 col-12">
+
+										<div class="container">
+											<div class="docs-overview py-5">
+												<div class="row justify-content-center">
+								
+													<div class="col-12 col-lg-4 py-3">
+														<div class="card shadow-sm">
+															<div class="card-body">
+																<h5 class="card-title mb-3">
+																	<span class="theme-icon-holder card-icon-holder me-2">
+																		<i class="fas fa-box fa-fw"></i>
+																	</span><!--//card-icon-holder-->
+																	<span class="card-title-text">Analyze My Data</span>
+																</h5>
+																<img src="assets/images/img/data analyze.jpg" width="300" height="175" alt="logo">
+																<div class="card-text">
+																	<br>
+																	This toolkit provides a rich insight in to your dataset. Our functions
+																	evaluate your dataset on-the-spot and provides analysis helping you
+																	to identify impurities and biases in your data set.							    
+																</div>
+																<a class="card-link-mask" href="#item-2-1" class="btn btn-primary" id="Button01Submit" onclick="Button01Submit()"></a>
+															</div><!--//card-body-->
+														</div><!--//card-->
+													</div><!--//col-->
+								
+													<div class="col-12 col-lg-4 py-3">
+														<div class="card shadow-sm">
+															<div class="card-body">
+																<h5 class="card-title mb-3">
+																	<span class="theme-icon-holder card-icon-holder me-2">
+																		<i class="fas fa-box fa-fw"></i>
+																	</span><!--//card-icon-holder-->
+																	<span class="card-title-text">Principal Component</span>
+																</h5>
+																<img src="assets/images/img/principal componanet.png" width="300" height="175" alt="logo">
+																<div class="card-text">
+																	<br>
+																	Principal Component Analysis, or PCA, is a dimensionality-reduction method that is often used to reduce the dimensionality of large data sets, by transforming a large set of variables into a smaller one that still contains most of the information in the large set.							    
+																</div>
+																<a class="card-link-mask" href="#item-2-1" class="btn btn-primary" id="Button02Submit" onclick="Button02Submit()"></a>
+															</div><!--//card-body-->
+														</div><!--//card-->
+													</div><!--//col-->
+								
+								
+													<div class="col-12 col-lg-4 py-3">
+														<div class="card shadow-sm">
+															<div class="card-body">
+																<h5 class="card-title mb-3">
+																	<span class="theme-icon-holder card-icon-holder me-2">
+																		<i class="fas fa-box fa-fw"></i>
+																	</span><!--//card-icon-holder-->
+																	<span class="card-title-text">Preprocess Data</span>
+																</h5>
+																<img src="assets/images/img/preprocessing.jpg" width="300" height="175" alt="logo">
+																<div class="card-text">
+																	<br>
+																	This tool takes your dataset in to our system for preprocessing and data
+																	cleaning. You will be able to download your dataset after the cleaning 
+																	process. The cleaned dataset then can use through our machine learning model
+																	gallery. 						    
+																</div>
+																	<a class="card-link-mask" href="#item-2-1" class="btn btn-primary" id="Button03Submit" onclick="Button03Submit()"></a>
+															</div><!--//card-body-->
+														</div><!--//card-->
+													</div><!--//col-->
+													
+											
+												</div><!--//row-->
+											</div><!--//container-->
+										</div><!--//container-->
+
+
+								</div>
+								
+								<!-- <div class="col-md-6 col-12">
+									<br>
+									<ul class="list list-unstyled pl-0">
+										<li><a href="#" class="btn btn-primary"><i class="fas fa-download me-2"></i> Download Now</a></li>
+										<li><a href="#" class="btn btn-secondary"><i class="fas fa-book me-2"></i> View Docs</a></li>
+										<li><a href="#" class="btn btn-light"><i class="fas fa-arrow-alt-circle-right me-2"></i> View Features</a></li>
+										<li><a href="#" class="btn btn-success"><i class="fas fa-code-branch me-2"></i> Fork Now</a></li>
+										<li><a href="#" class="btn btn-info"><i class="fas fa-play-circle me-2"></i> Find Out Now</a></li>
+										<li><a href="#" class="btn btn-warning"><i class="fas fa-bug me-2"></i> Report Bugs</a></li>
+										<li><a href="#" class="btn btn-danger"><i class="fas fa-exclamation-circle me-2"></i> Submit Issues</a></li>
+									</ul>
+								</div> -->
+							</div><!--//row-->
+
+							<h5>ML Models:</h5>
+							<div class="row my-3">
+								<div class="col-md-12 col-12">
+
+										<div class="container">
+											<div class="docs-overview py-5">
+												<div class="row justify-content-center">
+								
+													<div class="col-12 col-lg-4 py-3">
+														<div class="card shadow-sm">
+															<div class="card-body">
+																<h5 class="card-title mb-3">
+																	<span class="theme-icon-holder card-icon-holder me-2">
+																		<i class="fas fa-box fa-fw"></i>
+																	</span><!--//card-icon-holder-->
+																	<span class="card-title-text">Linear Regression</span>
+																</h5>
+																<img src="assets/images/img/pic_4.png" width="300" height="180" alt="logo">
+																<div class="card-text">
+																	<br>
+																	This machine learning algorithem allows you to identify linear pattern 
+																	between two variables in your dataset. After feeding enough data, you
+																	will be able to provide a reasonable prediction based on our model. 																</div>
+																<a class="card-link-mask" href="#item-2-1" class="btn btn-primary" id="Button04Submit" onclick="Button04Submit()"></a>
+															</div><!--//card-body-->
+														</div><!--//card-->
+													</div><!--//col-->
+								
+													<div class="col-12 col-lg-4 py-3">
+														<div class="card shadow-sm">
+															<div class="card-body">
+																<h5 class="card-title mb-3">
+																	<span class="theme-icon-holder card-icon-holder me-2">
+																		<i class="fas fa-box fa-fw"></i>
+																	</span><!--//card-icon-holder-->
+																	<span class="card-title-text">Multiple Regression</span>
+																</h5>
+																<img src="assets/images/img/multiple linear reg.png" width="300" height="180" alt="logo">
+																<div class="card-text">
+																	<br>
+																	This machine learning algorithem allows you to identify linear pattern 
+																	between two or more variables in your dataset. After feeding enough data, you
+																	will be able to provide a reasonable prediction based on our model. 																
+																	</div>
+																<a class="card-link-mask" href="#item-2-1" class="btn btn-primary" id="Button05Submit" onclick="Button05Submit()"></a>
+															</div><!--//card-body-->
+														</div><!--//card-->
+													</div><!--//col-->
+								
+								
+													<div class="col-12 col-lg-4 py-3">
+														<div class="card shadow-sm">
+															<div class="card-body">
+																<h5 class="card-title mb-3">
+																	<span class="theme-icon-holder card-icon-holder me-2">
+																		<i class="fas fa-box fa-fw"></i>
+																	</span><!--//card-icon-holder-->
+																	<span class="card-title-text">Decision Tree</span>
+																</h5>
+																<img src="assets/images/img/decision tree.png" width="300" height="175" alt="logo">
+																<div class="card-text">
+																	<br>
+																	Classification is a two-step process, learning step and prediction step, in machine learning. In the learning step, 
+																	the model is developed based on given training data. In the prediction step, the model is used to predict the response for given data. Decision Tree is one of the easiest and popular classification algorithms to understand and interpret.																</div>
+																	<a class="card-link-mask" href="#item-2-1" class="btn btn-primary" id="Button06Submit" onclick="Button06Submit()"></a>
+															</div><!--//card-body-->
+														</div><!--//card-->
+													</div><!--//col-->
+
+													<div class="col-12 col-lg-4 py-3">
+														<div class="card shadow-sm">
+															<div class="card-body">
+																<h5 class="card-title mb-3">
+																	<span class="theme-icon-holder card-icon-holder me-2">
+																		<i class="fas fa-box fa-fw"></i>
+																	</span><!--//card-icon-holder-->
+																	<span class="card-title-text">Artificial Neural Network</span>
+																</h5>
+																<img src="assets/images/img/Artificial Neural Networks.jpg" width="300" height="175" alt="logo">
+																<div class="card-text">
+																	<br>
+																	This tool allows you to build and test a simple artificial neural 
+																	network and use it to find hidden relationships in your data.After 
+																	training your ANN model, you will be able to predict defined outcomes
+																	to given inputs.  
+																																	 </div>
+																	<a class="card-link-mask" href="#item-2-1" class="btn btn-primary" id="Button06Submit" onclick="Button07Submit()"></a>
+															</div><!--//card-body-->
+														</div><!--//card-->
+													</div><!--//col-->
+													
+													
+												</div><!--//row-->
+											</div><!--//container-->
+										</div><!--//container-->
+								</div>
+								
+								<!-- <div class="col-md-6 col-12">
+									<br>
+									<ul class="list list-unstyled pl-0">
+										<li><a href="#" class="btn btn-primary"><i class="fas fa-download me-2"></i> Download Now</a></li>
+										<li><a href="#" class="btn btn-secondary"><i class="fas fa-book me-2"></i> View Docs</a></li>
+										<li><a href="#" class="btn btn-light"><i class="fas fa-arrow-alt-circle-right me-2"></i> View Features</a></li>
+										<li><a href="#" class="btn btn-success"><i class="fas fa-code-branch me-2"></i> Fork Now</a></li>
+										<li><a href="#" class="btn btn-info"><i class="fas fa-play-circle me-2"></i> Find Out Now</a></li>
+										<li><a href="#" class="btn btn-warning"><i class="fas fa-bug me-2"></i> Report Bugs</a></li>
+										<li><a href="#" class="btn btn-danger"><i class="fas fa-exclamation-circle me-2"></i> Submit Issues</a></li>
+									</ul>
+								</div> -->
+							</div><!--//row-->
+
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">Workbench</h2>							
+					</section>
+					
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+					<!-- <button id="LinkSubmit" onclick="LinkSubmit()">OPEN</button> -->
+					<iframe id="button_01" src="about:blank" width="1150" height="700" style="background:#ffffff"></iframe>
+
+
+					<!-- <section class="docs-section" id="item-2-2">
+						<h2 class="section-heading">Section Item 2.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					
+					<section class="docs-section" id="item-2-3">
+						<h2 class="section-heading">Section Item 2.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section> -->
+			    </article>
+			    
+			    
+			    
+			    <article class="docs-article" id="section-5">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Case Study</h1>
+					    <section class="docs-intro">
+						    <!-- <p>This is providing the case studies where you can adopt your data into decisions.</p> -->
+
+
+							<div class="page-content">
+								<div class="container">
+									<div class="docs-overview py-1">
+										<div class="row justify-content-center">
+						
+											<div class="col-12 col-lg-4 py-3">
+												<div class="card shadow-sm">
+													<div class="card-body">
+														<h5 class="card-title mb-3">
+															<span class="theme-icon-holder card-icon-holder me-2">
+																<i class="fas fa-box fa-fw"></i>
+															</span><!--//card-icon-holder-->
+															<span class="card-title-text">Case Study Bank</span>
+														</h5>
+														<img src="assets/images/img/case1.jpg" width="300" height="180" alt="logo">
+														<div class="card-text">
+															<br>
+															This case study refers to a work that you will lead to analyze your data to find the best predicted results
+														</div>
+														<a class="card-link-mask" href="#item-2-1" class="btn btn-primary" id="Button08Submit" onclick="Button08Submit()"></a>
+													</div><!--//card-body-->
+												</div><!--//card-->
+											</div><!--//col-->
+						
+
+						
+													
+										</div><!--//row-->
+									</div><!--//container-->
+								</div><!--//container-->
+						   </div><!--//page-content-
+
+
+
+
+						</section><!--//docs-intro-->
+				    <!-- </header>
+				     <section class="docs-section" id="item-5-1">
+						<h2 class="section-heading">Section Item 5.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					
+					<section class="docs-section" id="item-5-2">
+						<h2 class="section-heading">Section Item 5.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					
+					<section class="docs-section" id="item-5-3">
+							<h2 class="section-heading">Section Item 5.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section> -->
+			    </article><!--//docs-article-->
+			    
+				<article class="docs-article" id="section-3">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">User Guide</h1>
+					    <section class="docs-intro">
+						    <p>TBA</p>
+						</section>
+				    </header>
+				     <!-- <section class="docs-section" id="item-3-1">
+						<h2 class="section-heading">Section Item 3.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					
+					<section class="docs-section" id="item-3-2">
+						<h2 class="section-heading">Section Item 3.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					
+					<section class="docs-section" id="item-3-3">
+						<h2 class="section-heading">Section Item 3.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section> -->
+			    </article><!--//docs-article-->
+
+				
+			    
+			    <article class="docs-article" id="section-4">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">API Ref</h1>
+					    <section class="docs-intro">
+						    <p>API references will be linked in future version of Raccoon AI platform</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <!-- <section class="docs-section" id="item-4-1">
+						<h2 class="section-heading">Section Item 4.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					
+					<section class="docs-section" id="item-4-2">
+						<h2 class="section-heading">Section Item 4.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					
+					<section class="docs-section" id="item-4-3">
+						<h2 class="section-heading">Section Item 4.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section> -->
+			    </article><!--//docs-article-->
+
+			    
+		        <article class="docs-article" id="section-6">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Contact Us</h1>
+					    <section class="docs-intro">
+						    <p>If you have any question or queries, memeber of staff will always be happy to help. Feel free to contact us by email and we will be sure to get back to you as soon as possible.</p>
+							<p>SLT Digital lab section</p>
+							<p>Sri Lanka Telecom PLC</p>
+							<p>Colombo 01</p>
+							<p>Email - pasindu@slt.com.lk</p>
+						</section>
+				    </header>
+				     <!-- <section class="docs-section" id="item-6-1">
+						<h2 class="section-heading">Section Item 6.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					
+					<section class="docs-section" id="item-6-2">
+						<h2 class="section-heading">Section Item 6.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					
+					<section class="docs-section" id="item-6-3">
+							<h2 class="section-heading">Section Item 6.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section> -->
+			    </article><!--//docs-article-->
+
+				
+			    
+			
+
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <!-- <small class="copyright">Template Copyright &copy; <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small> -->
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+						    <!-- <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li> -->
+				        </ul><!--//social-list-->
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+
+</body>
+</html>
